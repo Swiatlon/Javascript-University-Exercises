@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="drum-kit">
+      <div class="drum-pad" data-sound="boom">Q</div>
+      <div class="drum-pad" data-sound="clap">W</div>
+      <div class="drum-pad" data-sound="hihat">E</div>
+      <div class="drum-pad" data-sound="kick">R</div>
+      <div class="drum-pad" data-sound="openhat">A</div>
+      <div class="drum-pad" data-sound="ride">S</div>
+      <div class="drum-pad" data-sound="snare">D</div>
+      <div class="drum-pad" data-sound="tink">F</div>
+      <div class="drum-pad" data-sound="tom">G</div>
+    </div>
+
+    <div class="metronome-controls">
+      <button id="metronome-toggle">Włącz Metronom</button>
+      <input type="number" id="metronome-bpm" min="40" max="240" value="120" />
+      <label for="metronome-bpm">BPM</label>
+    </div>
+
+    <div class="channels">
+      <div class="channel" data-channel="0">
+        <button class="toggle-recording">Rozpocznij Nagrywanie</button>
+        <button class="play-recording">Odtwórz Nagranie</button>
+        <button class="lock-channel">Zablokuj Odtwarzanie</button>
+      </div>
+
+      <div class="channel" data-channel="1">
+        <button class="toggle-recording">Rozpocznij Nagrywanie</button>
+        <button class="play-recording">Odtwórz Nagranie</button>
+        <button class="lock-channel">Zablokuj Odtwarzanie</button>
+      </div>
+
+      <div class="channel" data-channel="2">
+        <button class="toggle-recording">Rozpocznij Nagrywanie</button>
+        <button class="play-recording">Odtwórz Nagranie</button>
+        <button class="lock-channel">Zablokuj Odtwarzanie</button>
+      </div>
+
+      <div class="channel" data-channel="3">
+        <button class="toggle-recording">Rozpocznij Nagrywanie</button>
+        <button class="play-recording">Odtwórz Nagranie</button>
+        <button class="lock-channel">Zablokuj Odtwarzanie</button>
+      </div>
+    </div>
+  </body>
+</html>

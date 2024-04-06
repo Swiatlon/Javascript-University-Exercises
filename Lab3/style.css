@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+.drum-kit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.drum-pad {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.active {
+  background-color: #06f7ff;
+}
+
+.recording-controls {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.channels {
+  display: grid;
+  justify-content: center;
+}
+
+.channel {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #888;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #bbb;
+}
+
+.is-recording {
+  background-color: rgb(20, 230, 55) !important;
+}
+
+.locked {
+  pointer-events: none;
+  background: #f66;
+}
