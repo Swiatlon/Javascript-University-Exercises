@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aplikacja Notatek</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Moje Notatki</h1>
+      </header>
+      <div class="note-form">
+        <input
+          type="text"
+          id="note-title"
+          placeholder="Tytuł notatki"
+          required
+        />
+        <textarea
+          id="note-content"
+          placeholder="Treść notatki"
+          required
+        ></textarea>
+        <input
+          type="text"
+          id="note-tags"
+          placeholder="Tagi (oddziel przecinkami)"
+        />
+        <div class="extra-options">
+          <input type="color" id="note-color" value="#ffcc00" />
+          <div>
+            <label for="note-pin" class="pin">Przypnij notatkę:</label>
+            <input type="checkbox" id="note-pin" />
+          </div>
+        </div>
+        <button onclick="addNote()">Dodaj Notatkę</button>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Wyszukaj notatki..."
+          oninput="searchNotes()"
+        />
+      </div>
+      <div id="notes-container">
+        <!-- Notatki będą tutaj wyświetlane -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
