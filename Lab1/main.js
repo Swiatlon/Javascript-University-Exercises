@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const newInput = document.createElement('input');
     newInput.type = 'number';
     newInput.classList.add('number-input');
+    newInput.placeholder = 'value'
     newInput.addEventListener('input', updateCalculations);
 
     const removeBtn = document.createElement('button');

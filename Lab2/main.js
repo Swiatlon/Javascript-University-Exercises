@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const totalSlides = slides.length;
   const nextButton = document.querySelector('.next');
   const prevButton = document.querySelector('.prev');
-  const pauseButton = document.querySelector('.pause'); // Przycisk pauzy/wznowienia
+  const pauseButton = document.querySelector('.pause');
   const dotsContainer = document.querySelector('.dots');
   let slideInterval;
   let isPaused = false;
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function autoSlide() {
     slideInterval = setInterval(function () {
       goToSlide(currentIndex + 1);
-    }, 5000); // Zmień czas na pożądany
+    }, 3000);
   }
 
   function pauseSlide() {
@@ -71,5 +71,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   createDots();
   goToSlide(0);
-  autoSlide(); // Rozpocznij automatyczne przewijanie po załadowaniu
+  autoSlide();
 });
